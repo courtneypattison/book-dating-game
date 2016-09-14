@@ -8,8 +8,9 @@
 
     <title>You had me at "hello"</title>
 
-    <link rel="stylesheet" href="style.css">
-    <link rel="authors" href="humans.txt">
+    <link href="humans.txt" rel="authors">
+    <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Alegreya" rel="stylesheet"> 
   </head>
 
   <body>
@@ -19,7 +20,7 @@
       </header>
 
       <div id="game-board">
-        <section class="game-column">
+        <section id="category1" class="game-column">
           <h2>Navigating life</h2>
           <button type="button" data-a11y-dialog-show="PZ7A382A262007">Self discovery</button>
           <button type="button" data-a11y-dialog-show="PS3614E443A882006">Meaning of life</button>
@@ -27,20 +28,20 @@
           <button type="button" data-a11y-dialog-show="PR6110O98U652013">Redemption</button>
         </section>
 
-        <section class="game-column">
+        <section id="category2" class="game-column">
           <h2>True story</h2>
           <button type="button" data-a11y-dialog-show="PN4874L285A32013">Totally inappropriate</button>
           <button type="button" data-a11y-dialog-show="BF175T682011">Mentally unscathed</button>
         </section>
 
-        <section class="game-column">
+        <section id="category3" class="game-column">
           <h2>Tall, dark, and mysterious</h2>
           <button type="button" data-a11y-dialog-show="PR6123A884B452011">Compellingly hypnotic</button>
           <button type="button" data-a11y-dialog-show="PS3619L6278M772012">Code breaking</button>
           <button type="button" data-a11y-dialog-show="PS8615A7484S562013">Wickedly twisted</button>
         </section>
 
-        <section class="game-column">
+        <section id="category4" class="game-column">
           <h2>Short and sweet</h2>
           <button type="button" data-a11y-dialog-show="PS8555O23H442013">Jarring</button>
           <button type="button" data-a11y-dialog-show="S4945U72E262013">Urban agriculture</button>
@@ -48,7 +49,7 @@
           <button type="button" data-a11y-dialog-show="PS3604A9562E842013">Minimalist meditation</button>
         </section>
 
-        <section class="game-column">
+        <section id="category5" class="game-column">
           <h2>Hey, it could happen!</h2>
           <button type="button" data-a11y-dialog-show="PR6057A319O242013">Sinister whimsy</button>
           <button type="button" data-a11y-dialog-show="PS8571A892B672013">Blessings-turned-curses</button>
@@ -57,151 +58,196 @@
     </main>
 
     <div id="PZ7A382A262007" class="dialog" aria-hidden="true">
-      <div tabindex="-1" data-a11y-dialog-hide></div>
-      <div role="dialog" aria-labelledby="dialog-title">
+      <div class="dialog-overlay" tabindex="-1" data-a11y-dialog-hide></div>
+      <div class="dialog-content" role="dialog" aria-labelledby="dialog-title">
         <div role="document">
           <blockquote tabindex="0">"My brain was drowning in grease."</blockquote>
-          <button type="button" data-a11y-dialog-hide aria-label="Close this dialog window">&times;</button>
+					<div class="dialog-button-container">
+						<button type="button" data-a11y-dialog-hide>Not interested</button>
+						<button type="button" data-a11y-dialog-hide onclick="window.open('http://primo.tug-libraries.on.ca/GUELPH:vtug3962406', '_blank')">I'm hooked!</button>
+					</div>
         </div>
       </div>
     </div>
 
     <div id="PS3614E443A882006" class="dialog" aria-hidden="true">
-      <div tabindex="-1" data-a11y-dialog-hide></div>
-      <div role="dialog" aria-labelledby="dialog-title">
+      <div class="dialog-overlay" tabindex="-1" data-a11y-dialog-hide></div>
+      <div class="dialog-content" role="dialog" aria-labelledby="dialog-title">
         <div role="document">
           <blockquote tabindex="0">"I was stealing saltshakers again. Ten, sometimes twelve a night, shoving them in my pockets, hiding them up my sleeves, smuggling them out of bars and diners and anywhere else I could find them. In the morning, wherever I woke up, I was always covered in salt."</blockquote>
-          <button type="button" data-a11y-dialog-hide aria-label="Close this dialog window">&times;</button>
+					<div class="dialog-button-container">
+						<button type="button" data-a11y-dialog-hide>Not interested</button>
+						<button type="button" data-a11y-dialog-hide onclick="window.open('', '_blank')">I'm hooked!</button>
+					</div>
         </div>
       </div>
     </div>
 
     <div id="PZ7R79613E442013" class="dialog" aria-hidden="true">
-      <div tabindex="-1" data-a11y-dialog-hide></div>
-      <div role="dialog" aria-labelledby="dialog-title">
+      <div class="dialog-overlay" tabindex="-1" data-a11y-dialog-hide></div>
+      <div class="dialog-content" role="dialog" aria-labelledby="dialog-title">
         <div role="document">
           <blockquote tabindex="0">"He stopped trying to bring her back. She only came back when she felt like it, in dreams and lies and broken down déjà vu."</blockquote>
-          <button type="button" data-a11y-dialog-hide aria-label="Close this dialog window">&times;</button>
+					<div class="dialog-button-container">
+						<button type="button" data-a11y-dialog-hide>Not interested</button>
+						<button type="button" data-a11y-dialog-hide onclick="window.open('', '_blank')">I'm hooked!</button>
+					</div>
         </div>
       </div>
     </div>
 
     <div id="PR6110O98U652013" class="dialog" aria-hidden="true">
-      <div tabindex="-1" data-a11y-dialog-hide></div>
-      <div role="dialog" aria-labelledby="dialog-title">
+      <div class="dialog-overlay" tabindex="-1" data-a11y-dialog-hide></div>
+      <div class="dialog-content" role="dialog" aria-labelledby="dialog-title">
         <div role="document">
           <blockquote tabindex="0">"The letter that would change everything arrived on a Tuesday."</blockquote>
-          <button type="button" data-a11y-dialog-hide aria-label="Close this dialog window">&times;</button>
+					<div class="dialog-button-container">
+						<button type="button" data-a11y-dialog-hide>Not interested</button>
+						<button type="button" data-a11y-dialog-hide onclick="window.open('', '_blank')">I'm hooked!</button>
+					</div>
         </div>
       </div>
     </div>
 
     <div id="PN4874L285A32013" class="dialog" aria-hidden="true">
-      <div tabindex="-1" data-a11y-dialog-hide></div>
-      <div role="dialog" aria-labelledby="dialog-title">
+      <div class="dialog-overlay" tabindex="-1" data-a11y-dialog-hide></div>
+      <div class="dialog-content" role="dialog" aria-labelledby="dialog-title">
         <div role="document">
           <blockquote tabindex="0">"This book is totally true, except for the parts that aren't. Its basically like Little House on the Prairie but with more cursing."</blockquote>
-          <button type="button" data-a11y-dialog-hide aria-label="Close this dialog window">&times;</button>
+					<div class="dialog-button-container">
+						<button type="button" data-a11y-dialog-hide>Not interested</button>
+						<button type="button" data-a11y-dialog-hide onclick="window.open('', '_blank')">I'm hooked!</button>
+					</div>
         </div>
       </div>
     </div>
 
     <div id="BF175T682011" class="dialog" aria-hidden="true">
-      <div tabindex="-1" data-a11y-dialog-hide></div>
-      <div role="dialog" aria-labelledby="dialog-title">
+      <div class="dialog-overlay" tabindex="-1" data-a11y-dialog-hide></div>
+      <div class="dialog-content" role="dialog" aria-labelledby="dialog-title">
         <div role="document">
           <blockquote tabindex="0">""Did you have a dream last night?" my father asked me. We were sitting in the car, waiting for my mother and sister. I was four years old."</blockquote>
-          <button type="button" data-a11y-dialog-hide aria-label="Close this dialog window">&times;</button>
+					<div class="dialog-button-container">
+						<button type="button" data-a11y-dialog-hide>Not interested</button>
+						<button type="button" data-a11y-dialog-hide onclick="window.open('', '_blank')">I'm hooked!</button>
+					</div>
         </div>
       </div>
     </div>
 
     <div id="PR6123A884B452011" class="dialog" aria-hidden="true">
-      <div tabindex="-1" data-a11y-dialog-hide></div>
-      <div role="dialog" aria-labelledby="dialog-title">
+      <div class="dialog-overlay" tabindex="-1" data-a11y-dialog-hide></div>
+      <div class="dialog-content" role="dialog" aria-labelledby="dialog-title">
         <div role="document">
           <blockquote tabindex="0">"The bedroom is strange. Unfamiliar. I don't know where I am, how I came to be here. I don’t know how I’m going to get home."</blockquote>
-          <button type="button" data-a11y-dialog-hide aria-label="Close this dialog window">&times;</button>
+					<div class="dialog-button-container">
+						<button type="button" data-a11y-dialog-hide>Not interested</button>
+						<button type="button" data-a11y-dialog-hide onclick="window.open('', '_blank')">I'm hooked!</button>
+					</div>
         </div>
       </div>
     </div>
 
     <div id="PS3619L6278M772012" class="dialog" aria-hidden="true">
-      <div tabindex="-1" data-a11y-dialog-hide></div>
-      <div role="dialog" aria-labelledby="dialog-title">
+      <div class="dialog-overlay" tabindex="-1" data-a11y-dialog-hide></div>
+      <div class="dialog-content" role="dialog" aria-labelledby="dialog-title">
         <div role="document">
           <blockquote tabindex="0">"Lost in the shadows of the shelves, I almost fall off the ladder. The floor of the bookstore is far below me, the surface of a planet I've left behind... My eyes trace a line above my knuckles, searching the spines – and there, I spot it. The book I’m looking for. But let me back up."</blockquote>
-          <button type="button" data-a11y-dialog-hide aria-label="Close this dialog window">&times;</button>
+					<div class="dialog-button-container">
+						<button type="button" data-a11y-dialog-hide>Not interested</button>
+						<button type="button" data-a11y-dialog-hide onclick="window.open('', '_blank')">I'm hooked!</button>
+					</div>
         </div>
       </div>
     </div>
 
     <div id="PS8615A7484S562013" class="dialog" aria-hidden="true">
-      <div tabindex="-1" data-a11y-dialog-hide></div>
-      <div role="dialog" aria-labelledby="dialog-title">
+      <div class="dialog-overlay" tabindex="-1" data-a11y-dialog-hide></div>
+      <div class="dialog-content" role="dialog" aria-labelledby="dialog-title">
         <div role="document">
           <blockquote tabindex="0">"It's early September. Jodie Brett is in her kitchen, making dinner."</blockquote>
-          <button type="button" data-a11y-dialog-hide aria-label="Close this dialog window">&times;</button>
+					<div class="dialog-button-container">
+						<button type="button" data-a11y-dialog-hide>Not interested</button>
+						<button type="button" data-a11y-dialog-hide onclick="window.open('', '_blank')">I'm hooked!</button>
+					</div>
         </div>
       </div>
     </div>
 
     <div id="PS8555O23H442013" class="dialog" aria-hidden="true">
-      <div tabindex="-1" data-a11y-dialog-hide></div>
-      <div role="dialog" aria-labelledby="dialog-title">
+      <div class="dialog-overlay" tabindex="-1" data-a11y-dialog-hide></div>
+      <div class="dialog-content" role="dialog" aria-labelledby="dialog-title">
         <div role="document">
           <blockquote tabindex="0">"Jane salutes you from an age where to be an aficionado is to find yourself foolishly situated in the world."</blockquote>
-          <button type="button" data-a11y-dialog-hide aria-label="Close this dialog window">&times;</button>
+					<div class="dialog-button-container">
+						<button type="button" data-a11y-dialog-hide>Not interested</button>
+						<button type="button" data-a11y-dialog-hide onclick="window.open('', '_blank')">I'm hooked!</button>
+					</div>
         </div>
       </div>
     </div>
 
     <div id="S4945U72E262013" class="dialog" aria-hidden="true">
-      <div tabindex="-1" data-a11y-dialog-hide></div>
-      <div role="dialog" aria-labelledby="dialog-title">
+      <div class="dialog-overlay" tabindex="-1" data-a11y-dialog-hide></div>
+      <div class="dialog-content" role="dialog" aria-labelledby="dialog-title">
         <div role="document">
           <blockquote tabindex="0">"As a food photographer, I've taken pictures of all kinds of food: drippy, sugary, grilled, sautéed, tossed and frozen. Whatever the subject, my job is always the same: to make it look delicious... I spend so much time looking at food that I can't help but be a little obsessed about it. I wonder what's in it, where it came from, how it was grown, and even who grew it."</blockquote>
-          <button type="button" data-a11y-dialog-hide aria-label="Close this dialog window">&times;</button>
+					<div class="dialog-button-container">
+						<button type="button" data-a11y-dialog-hide>Not interested</button>
+						<button type="button" data-a11y-dialog-hide onclick="window.open('', '_blank')">I'm hooked!</button>
+					</div>
         </div>
       </div>
     </div>
 
     <div id="PS3569E314S682011" class="dialog" aria-hidden="true">
-      <div tabindex="-1" data-a11y-dialog-hide></div>
-      <div role="dialog" aria-labelledby="dialog-title">
+      <div class="dialog-overlay" tabindex="-1" data-a11y-dialog-hide></div>
+      <div class="dialog-content" role="dialog" aria-labelledby="dialog-title">
         <div role="document">
           <blockquote tabindex="0">"The cat had a party to attend, and went to the baboon to get herself groomed."</blockquote>
-          <button type="button" data-a11y-dialog-hide aria-label="Close this dialog window">&times;</button>
+					<div class="dialog-button-container">
+						<button type="button" data-a11y-dialog-hide>Not interested</button>
+						<button type="button" data-a11y-dialog-hide onclick="window.open('', '_blank')">I'm hooked!</button>
+					</div>
         </div>
       </div>
     </div>
 
     <div id="PS3604A9562E842013" class="dialog" aria-hidden="true">
-      <div tabindex="-1" data-a11y-dialog-hide></div>
-      <div role="dialog" aria-labelledby="dialog-title">
+      <div class="dialog-overlay" tabindex="-1" data-a11y-dialog-hide></div>
+      <div class="dialog-content" role="dialog" aria-labelledby="dialog-title">
         <div role="document">
           <blockquote tabindex="0">"There is no this or that world."</blockquote>
-          <button type="button" data-a11y-dialog-hide aria-label="Close this dialog window">&times;</button>
+					<div class="dialog-button-container">
+						<button type="button" data-a11y-dialog-hide>Not interested</button>
+						<button type="button" data-a11y-dialog-hide onclick="window.open('', '_blank')">I'm hooked!</button>
+					</div>
         </div>
       </div>
     </div>
 
     <div id="PR6057A319O242013" class="dialog" aria-hidden="true">
-      <div tabindex="-1" data-a11y-dialog-hide></div>
-      <div role="dialog" aria-labelledby="dialog-title">
+      <div class="dialog-overlay" tabindex="-1" data-a11y-dialog-hide></div>
+      <div class="dialog-content" role="dialog" aria-labelledby="dialog-title">
         <div role="document">
           <blockquote tabindex="0">"It was only a duck pond, out at the back of the farm. It wasn't very big. Lettie Hempstock said it was an ocean, but I knew that was silly. She said they'd come here across the ocean from the old country. Her mother said that Lettie didn’t remember properly, and it was a long time ago, and anyway, the old country had sunk. Old Mrs. Hempstock, Lettie's grandmother, said they were both wrong, and that the place that had sunk wasn't the really old country. She said she could remember the really old country. She said the really old country had blown up."</blockquote>
-          <button type="button" data-a11y-dialog-hide aria-label="Close this dialog window">&times;</button>
+					<div class="dialog-button-container">
+						<button type="button" data-a11y-dialog-hide>Not interested</button>
+						<button type="button" data-a11y-dialog-hide onclick="window.open('', '_blank')">I'm hooked!</button>
+					</div>
         </div>
       </div>
     </div>
 
     <div id="PS8571A892B672013" class="dialog" aria-hidden="true">
-      <div tabindex="-1" data-a11y-dialog-hide></div>
-      <div role="dialog" aria-labelledby="dialog-title">
+      <div class="dialog-overlay" tabindex="-1" data-a11y-dialog-hide></div>
+      <div class="dialog-content" role="dialog" aria-labelledby="dialog-title">
         <div role="document">
           <blockquote tabindex="0">"The Weirds acquired their surname through a series of events that some would call coincidence and others would call fate."</blockquote>
-          <button type="button" data-a11y-dialog-hide aria-label="Close this dialog window">&times;</button>
+					<div class="dialog-button-container">
+						<button type="button" data-a11y-dialog-hide>Not interested</button>
+						<button type="button" data-a11y-dialog-hide onclick="window.open('', '_blank')">I'm hooked!</button>
+					</div>
         </div>
       </div>
     </div>
