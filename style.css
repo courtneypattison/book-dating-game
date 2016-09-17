@@ -96,63 +96,63 @@ header h1 {
   color: rgba(64, 121, 47, .8);
 }
 
-#category1 button {
+.column1 button {
   background-color: rgba(153, 0, 0, .6);
 }
 
-#category1 button:hover {
+.column1 button:hover {
   background-color: rgba(153, 0, 0, .8);
 }
 
-#category1 button:active {
+.column1 button:active {
   background-color: rgb(153, 0, 0);
 }
 
-#category2 button {
+.column2 button {
   background-color: rgba(555, 204, 0, .6);
 }
 
-#category2 button:hover {
+.column2 button:hover {
   background-color: rgba(555, 204, 0, .8);
 }
 
-#category2 button:active {
+.column2 button:active {
   background-color: rgb(555, 204, 0);
 }
 
-#category3 button {
+.column3 button {
   background-color: rgba(112, 150, 175, .6);
 }
 
-#category3 button:hover {
+.column3 button:hover {
   background-color: rgba(112, 150, 175, .8);
 }
 
-#category3 button:active {
+.column3 button:active {
   background-color: rgb(112, 150, 175);
 }
 
-#category4 button {
+.column4 button {
   background-color: rgba(0, 0, 0, .4);
 }
 
-#category4 button:hover {
+.column4 button:hover {
   background-color: rgba(0, 0, 0, .6);
 }
 
-#category4 button:active {
+.column4 button:active {
   background-color: rgba(0, 0, 0, .8);
 }
 
-#category5 button {
+.column5 button {
   background-color: rgba(64, 121, 47, .6);
 }
 
-#category5 button:hover {
+.column5 button:hover {
   background-color: rgba(64, 121, 47, .8);
 }
 
-#category5 button:active {
+.column5 button:active {
   background-color: rgb(64, 121, 47);
 }
 

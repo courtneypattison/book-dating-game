@@ -19,10 +19,11 @@
         <img src="img/book_side.svg" alt="">
         <p><a href="http://www.lib.uoguelph.ca/news/gryph-reads-read-fun"><span class="red-text">G</span><span class="yellow-text">r</span><span class="blue-text">y</span><span class="grey-text">p</span><span class="green-text">h</span><span class="red-text">R</span><span class="yellow-text">e</span><span class="blue-text">a</span><span class="grey-text">d</span><span class="green-text">s</span></a> presents</p>
         <h1 id="first-heading">You had m</h1><h1 id="second-heading">e at "hello"</h1>
+        <button type="button" data-a11y-dialog-show="0">How to play</button>
       </header>
 
       <div id="game-board">
-        <section class="column1 game-column">
+        <section class="category1" class="game-column">
           <h2>Navigating life</h2>
           <button type="button" data-a11y-dialog-show="1">Self discovery</button>
           <button type="button" data-a11y-dialog-show="2">Meaning of life</button>
@@ -30,7 +31,7 @@
           <button type="button" data-a11y-dialog-show="4">Redemption</button>
         </section>
 
-        <section class="column2 game-column">
+        <section class="category2" class="game-column">
           <h2>True story</h2>
           <button type="button" data-a11y-dialog-show="5">Totally inappropriate</button>
           <button type="button" data-a11y-dialog-show="6">Mentally unscathed</button>
@@ -38,7 +39,7 @@
           <button type="button" data-a11y-dialog-show="8"></button>
         </section>
 
-        <section class="column3 game-column">
+        <section class="category3" class="game-column">
           <h2>Tall, dark, and mysterious</h2>
           <button type="button" data-a11y-dialog-show="9">Compellingly hypnotic</button>
           <button type="button" data-a11y-dialog-show="10">Code breaking</button>
@@ -46,7 +47,7 @@
           <button type="button" data-a11y-dialog-show="12"></button>
         </section>
 
-        <section class="column4 game-column">
+        <section class="category4" class="game-column">
           <h2>Short and sweet</h2>
           <button type="button" data-a11y-dialog-show="13">Jarring</button>
           <button type="button" data-a11y-dialog-show="14">Urban agriculture</button>
@@ -54,7 +55,7 @@
           <button type="button" data-a11y-dialog-show="16">Minimalist meditation</button>
         </section>
 
-        <section class="column5 game-column">
+        <section class="category5" class="game-column">
           <h2>Hey, it could happen!</h2>
           <button type="button" data-a11y-dialog-show="17">Sinister whimsy</button>
           <button type="button" data-a11y-dialog-show="18">Blessings-turned-curses</button>
@@ -63,6 +64,18 @@
         </section>
       </div>
     </main>
+
+    <div id="0" class="dialog" aria-hidden="true">
+      <div class="dialog-overlay" tabindex="-1" data-a11y-dialog-hide></div>
+      <div class="dialog-content" role="dialog" aria-labelledby="dialog-title">
+        <div role="document">
+          <blockquote tabindex="0">choose</blockquote>
+					<div class="dialog-button-container">
+						<button type="button" data-a11y-dialog-hide>Close</button>
+					</div>
+        </div>
+      </div>
+    </div>
 
     <div id="1" class="dialog" aria-hidden="true">
       <div class="dialog-overlay" tabindex="-1" data-a11y-dialog-hide></div>
@@ -262,7 +275,7 @@
     <script src="js/lib/a11y-dialog.min.js"></script>
     <script>
       (function () {
-        var dialogIds = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10",
+        var dialogIds = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10",
             "11", "12", "13", "14", "15", "16", "17", "18", "19", "20"];
         document.addEventListener('DOMContentLoaded', function () {
           for (var dialogId in dialogIds) {
