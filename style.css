@@ -11,21 +11,148 @@ html {
 /* Body */
 
 body {
-  background-color: rgba(204, 153, 102, .25);
+  background-color: rgb(252, 237, 216);
 }
 
 /* Typography */
 
 h1, h2, p, button, blockquote {
   font-family: 'Alegreya', serif;
+  color: black;
+}
+
+/* Header */
+
+header {
+  position: absolute;
+  width: 100%;
+  height: 12em;
+}
+
+header p {
+  position: absolute;
+  top: 10%;
+  right: 50%;
+  margin: 0em 0em 0em 1em;
+  font-size: 1.3em;
+}
+
+header p a {
+  text-decoration: none;
+}
+
+header p a:hover {
+  border-bottom: 2px solid black;
+}
+
+header p a:active {
+  border-bottom: 2px solid black;
+}
+
+header img {
+  position: absolute;
+  max-width: 90%;
+  height: 100%;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+#first-heading {
+  position: absolute;
+  top: 40%;
+  right: 50%;
+}
+
+#second-heading {
+  display: block;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: rotate(340deg);
+  transform-origin: 0 0;
+}
+
+.red-text {
+  color: rgba(153, 0, 0, .7);
+}
+
+.yellow-text {
+  color: rgba(555, 204, 0, 1);
+}
+
+.blue-text {
+  color: rgba(112, 150, 175, .8);
+}
+
+.grey-text {
+  color: rgba(0, 0, 0, .5);
+}
+
+.green-text {
+  color: rgba(64, 121, 47, .8);
+}
+
+#category1 button {
+  background-color: rgba(153, 0, 0, .6);
+}
+
+#category1 button:hover {
+  background-color: rgba(153, 0, 0, .8);
+}
+
+#category1 button:active {
+  background-color: rgb(153, 0, 0);
+}
+
+#category2 button {
+  background-color: rgba(555, 204, 0, .6);
+}
+
+#category2 button:hover {
+  background-color: rgba(555, 204, 0, .8);
+}
+
+#category2 button:active {
+  background-color: rgb(555, 204, 0);
+}
+
+#category3 button {
+  background-color: rgba(112, 150, 175, .6);
+}
+
+#category3 button:hover {
+  background-color: rgba(112, 150, 175, .8);
+}
+
+#category3 button:active {
+  background-color: rgb(112, 150, 175);
+}
+
+#category4 button {
+  background-color: rgba(0, 0, 0, .4);
+}
+
+#category4 button:hover {
+  background-color: rgba(0, 0, 0, .6);
+}
+
+#category4 button:active {
+  background-color: rgba(0, 0, 0, .8);
+}
+
+#category5 button {
+  background-color: rgba(64, 121, 47, .6);
+}
+
+#category5 button:hover {
+  background-color: rgba(64, 121, 47, .8);
+}
+
+#category5 button:active {
+  background-color: rgb(64, 121, 47);
 }
 
 /* Game */
-
-h1 {
-	text-align: center;
-	color: #000;
-}
 
 h2 {
 	height: 2em;
@@ -35,37 +162,17 @@ h2 {
 }
 
 #game-board {
-  display: flex;
+  display: inline-flex;
   flex-wrap: wrap;
 	width: 90%;
-	margin: 0 auto;
+  margin: 12em 5% 0 5%;
 }
 
 .game-column {
   display: flex;
   flex-direction: column;
+  width: 100%;
   text-align: center;
-  width: 20%;
-}
-
-#category1 button {
-  background-color: rgba(153, 0, 0, .6);
-}
-
-#category2 button {
-  background-color: rgba(555, 204, 0, .6);
-}
-
-#category3 button {
-  background-color: rgba(112, 150, 175, .6);
-}
-
-#category4 button {
-  background-color: rgba(0, 0, 0, .6);
-}
-
-#category5 button {
-  background-color: rgba(64, 121, 47, .6);
 }
 
 /* Dialog */
@@ -85,7 +192,7 @@ h2 {
 }
 
 .dialog-content {
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(252, 237, 216);
   z-index: 3;
   position: fixed;
   top: 50%;
@@ -122,6 +229,15 @@ blockquote {
 	margin: .5em .5em .5em 0em;
 	padding: .5em;
   font-size: 1em;
+  background-color: rgba(64, 121, 47, .6);
+}
+
+.dialog-button-container button:hover {
+  background-color: rgba(64, 121, 47, .8);
+}
+
+.dialog-button-container button:active {
+  background-color: rgb(64, 121, 47);
 }
 
 /* Button */
@@ -140,11 +256,28 @@ section button {
 	font-size: 1.2em;
 }
 
-section button:hover {
-	background-color: #bf9900;
+/* Media queries */
+
+@media screen and (min-width: 400px) {
+  .game-column {
+    width: 50%;
+  }
 }
 
-section button:active {
-	background-color: #806600;
+@media screen and (min-width: 600px) {
+  .game-column {
+    width: 33.33%;
+  }
 }
 
+@media screen and (min-width: 800px) {
+  .game-column {
+    width: 25%;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .game-column {
+    width: 20%;
+  }
+}
