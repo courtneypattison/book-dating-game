@@ -26,7 +26,10 @@ h1, h2, p, li,  button, blockquote {
 header {
   position: absolute;
   width: 100%;
+  max-width: 600px;
   height: 12em;
+  left: 50%;
+  transform: translate(-50%);
 }
 
 header p {
@@ -110,11 +113,16 @@ h2 {
 	padding-right: .5em;
 }
 
+main {
+  display: flex;
+  justify-content: center;
+}
+
 #game-board {
   display: inline-flex;
   flex-wrap: wrap;
 	width: 90%;
-  margin: 12em 5% 0 5%;
+  margin-top: 12em;
 }
 
 .game-column {
