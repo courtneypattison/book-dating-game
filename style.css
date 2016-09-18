@@ -16,7 +16,7 @@ body {
 
 /* Typography */
 
-h1, h2, p, button, blockquote {
+h1, h2, p, li,  button, blockquote {
   font-family: 'Alegreya', serif;
   color: black;
 }
@@ -125,7 +125,7 @@ h2 {
   text-align: center;
 }
 
-.column1 button {
+.column1 button{
   background-color: rgba(153, 0, 0, .6);
 }
 
@@ -214,6 +214,12 @@ h2 {
 	max-height: 90%;
 }
 
+#instruction {
+	width: 500px;
+	height: 540px;
+}
+
+#instruction-container,
 blockquote {
   position: absolute;
   top: 0;
@@ -222,9 +228,32 @@ blockquote {
   height: 81%;
 	margin: 0;
 	padding: 2em;
-  overflow: auto;
 	font-size: 1.3em;
 	line-height: 1.3em;
+  overflow: auto;
+}
+
+#instruction-container a {
+  color: rgba(153, 0, 0, .8);
+  text-decoration: none;
+}
+
+#instruction-container a:hover {
+  text-decoration: underline;
+}
+
+#instruction-container a:active {
+  color: rgb(153, 0, 0);
+}
+
+#instruction-container ol {
+  margin-bottom: 0;
+}
+
+.primary-button-style {
+  padding: 0 .2em;
+  border: 2px solid black;
+  border-radius: .2em;
 }
 
 .dialog-button-container {
@@ -244,13 +273,10 @@ blockquote {
   border-radius: .2em;
 }
 
-.primary-button button:hover {
+.primary-button button:hover,
+.primary-button button:active {
   background-color: black;
   color: rgb(252, 237, 216);
-}
-
-.primary-button button:active {
-  background-color: rgb(64, 121, 47);
 }
 
 /* Button */
