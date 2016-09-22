@@ -8,6 +8,12 @@ html {
   box-sizing: inherit;
 }
 
+/* Outline */
+
+* {
+  outline: 0;
+}
+
 /* Body */
 
 body {
@@ -16,73 +22,39 @@ body {
 
 /* Typography */
 
-h1, h2, p, li,  button, blockquote {
+h1, h2, p, li, button, blockquote {
+  margin: 0;
+  padding: 0;
   font-family: 'Alegreya', serif;
   color: black;
+}
+
+h1 {
+  font-size: 1.6em;
+}
+
+h2 {
+	height: 3em;
+	padding: 0 .5em;
 }
 
 /* Header */
 
 header {
   position: absolute;
-  width: 100%;
-  max-width: 600px;
-  height: 12em;
   left: 50%;
+  width: 100%;
+  max-width: 34em;
+  height: 12em;
   transform: translate(-50%);
 }
 
-header p {
+#introduction {
   position: absolute;
   top: 10%;
   right: 50%;
   margin: 0em 0em 0em 2em;
   font-size: 1.3em;
-}
-
-header p a {
-  text-decoration: none;
-}
-
-header p a:hover {
-  border-bottom: 2px solid black;
-}
-
-header p a:active {
-  border-bottom: 2px solid black;
-}
-
-header img {
-  position: absolute;
-  max-width: 90%;
-  height: 100%;
-  left: 50%;
-  transform: translate(-50%);
-}
-
-header h1 {
-  font-size: 1.5em;
-}
-
-#heading {
-  position: absolute;
-  top: 50%;
-  right: 50%;
-}
-
-#rotated-heading {
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: rotate(330deg);
-  transform-origin: 0 0;
-}
-
-header div.primary-button button {
-  position: absolute;
-  top: 70%;
-  left: 68%;
 }
 
 .red-text {
@@ -105,13 +77,48 @@ header div.primary-button button {
   color: rgba(64, 121, 47, .8);
 }
 
-/* Game board */
-
-h2 {
-	height: 2em;
-	padding-left: .5em;
-	padding-right: .5em;
+#introduction a {
+  text-decoration: none;
 }
+
+#introduction a:hover {
+  border-bottom: 2px solid black;
+}
+
+#introduction a:active {
+  border-bottom: 2px solid black;
+}
+
+header img {
+  position: absolute;
+  max-width: 90%;
+  height: 100%;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+#heading-left {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+}
+
+#heading-right {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-origin: 0 0;
+  transform: rotate(330deg);
+}
+
+#instruction-button {
+  position: absolute;
+  top: 70%;
+  left: 75%;
+}
+
+/* Game board */
 
 main {
   display: flex;
@@ -122,7 +129,7 @@ main {
   display: inline-flex;
   flex-wrap: wrap;
 	width: 90%;
-  margin-top: 12em;
+  margin-top: 14em;
 }
 
 .game-column {
@@ -133,7 +140,7 @@ main {
   text-align: center;
 }
 
-.column1 button{
+.column1 button {
   background-color: rgba(153, 0, 0, .6);
 }
 
@@ -258,10 +265,40 @@ blockquote {
   margin-bottom: 0;
 }
 
-.primary-button-style {
-  padding: 0 .2em;
+/* Button */
+
+button {
+	color: #000;
+  font-size: 1em;
+}
+
+section button {
+	margin: .5em;
+	padding: .5em;
+  border: none;
+  border-radius: .2em;
+  border-bottom-right-radius: 25em 1em;
+	height: 4em;
+	font-size: 1.2em;
+}
+
+.fake-button,
+.primary-button button {
+	margin: .5em .5em .5em 0em;
+	padding: .5em;
   border: 2px solid black;
   border-radius: .2em;
+  background-color: rgb(252, 237, 216);
+}
+
+.fake-button {
+  padding: 0 .2em;
+}
+
+.primary-button button:hover,
+.primary-button button:active {
+  background-color: black;
+  color: rgb(252, 237, 216);
 }
 
 .dialog-button-container {
@@ -272,38 +309,6 @@ blockquote {
 	justify-content: flex-end;
 }
 
-.primary-button button {
-	margin: .5em .5em .5em 0em;
-	padding: .5em;
-  font-size: 1em;
-  background-color: rgb(252, 237, 216);
-  border: 2px solid black;
-  border-radius: .2em;
-}
-
-.primary-button button:hover,
-.primary-button button:active {
-  background-color: black;
-  color: rgb(252, 237, 216);
-}
-
-/* Button */
-
-button {
-	color: #000;
-	text-decoration: none;
-	border: none;
-}
-
-section button {
-	margin: .5em;
-	padding: .5em;
-  border-radius: .2em;
-  border-bottom-right-radius: 25em 1em;
-	height: 4em;
-	font-size: 1.2em;
-}
-
 /* Media queries */
 
 @media screen and (min-width: 400px) {
@@ -311,11 +316,11 @@ section button {
     width: 50%;
   }
 
-  header h1 {
+  h1 {
     font-size: 2em;
   }
 
-  #rotated-heading {
+  #heading-right {
     transform: rotate(340deg);
   }
 }
@@ -323,11 +328,6 @@ section button {
 @media screen and (min-width: 600px) {
   .game-column {
     width: 33.33%;
-  }
-
-  header div.primary-button button {
-    left: 50%;
-    margin-left: 10em;
   }
 }
 
