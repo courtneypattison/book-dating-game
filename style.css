@@ -114,8 +114,8 @@ header img {
 
 #instruction-button {
   position: absolute;
-  top: 70%;
-  left: 75%;
+  top: 72%;
+  left: 78%;
 }
 
 /* Game board */
@@ -325,19 +325,19 @@ section button {
   }
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 620px) {
   .game-column {
     width: 33.33%;
   }
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 820px) {
   .game-column {
     width: 25%;
   }
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1020px) {
   .game-column {
     width: 20%;
   }
