@@ -18,4 +18,4 @@ Find books in the University of Guelph Library's leisure reading collection, Gry
 ![modal](/../master/images/modal.png?raw=true)
 
 ## How to create your own
-To add new boards to the website, use the `board-template.html` filling in a unique id number for the `<button type="button" data-a11y-dialog-show="ID_NUMBER"></button>` button and corresponding dialog `<div id="ID_NUMBER" class="dialog" aria-hidden="true">`. Use index.html as a reference for filling in the other data.
+To add new boards to the website, use the `board-template.html` filling in a unique id number for the `<button type="button" data-a11y-dialog-show="ID_NUMBER"></button>` button and corresponding dialog `<div id="ID_NUMBER" class="dialog" aria-hidden="true">`. Use `index.html` as a reference for filling in the other data.
