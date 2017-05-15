@@ -1,9 +1,9 @@
-# The Gryph Reads Dating Game
-Website for Gryph Reads dating game event
+# The Gryph Reads Book Dating Game
+Website for Gryph Reads book dating game event
 
 Conceived by the Gryph Reads commitee, including Carrie Breton, Emily Carlisle, Jacqueline Hamilton, Melanie Parlette-Stewart, Hana Storova, Paula Barton, and Robin Sakowski
 
-## How to
+## How to play
 Do you like to read for fun?
 
 Find books in the University of Guelph Library's leisure reading collection, Gryph Reads, by reading the first paragraphs of some of the books from the collection.
@@ -16,3 +16,6 @@ Find books in the University of Guelph Library's leisure reading collection, Gry
 ![index](/../master/images/index.png?raw=true)
 
 ![modal](/../master/images/modal.png?raw=true)
+
+## How to create your own
+To add new boards to the website, use the `board-template.html` filling in a unique id number for the `<button type="button" data-a11y-dialog-show="ID_NUMBER"></button>` button and corresponding dialog `<div id="ID_NUMBER" class="dialog" aria-hidden="true">`. Use index.html as a reference for filling in the other data.
